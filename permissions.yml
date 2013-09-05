@@ -1,0 +1,46 @@
+groups:
+    Citizen:
+        default: true
+        build: true
+        prefix: '&3[Citizen]&f'
+        permissions:
+        - essentials.rules
+        - essentials.spawn
+        - essentials.help
+        - essentials.sethome
+        - essentials.home
+        - essentials.list
+        - essentials.tpa
+        - essentials.tpaccept
+        - essentials.tpdeny
+        - essentials.kit
+        - essentials.balance
+        - essentials.balancetop
+        - essentials.warp
+        - essentials.msg
+        - essentials.pay
+        - essentials.signs.use.disposal
+        - essentials.signs.use.free
+        - essentials.signs.use.heal
+        - essentials.signs.use.mail
+        - essentials.signs.use.time
+        - essentials.signs.use.buy
+        - essentials.signs.use.sell
+        - essentials.signs.use.balance
+        - essentials.signs.use.warp
+        - essentials.signs.use.weather
+        - essentials.signs.use.spawnmob
+        - ChestShop.shop.buy
+        - ChestShop.shop.sell
+        - announcer.receiver
+        - essentials.afk
+        - essentials.worth
+
+#**************
+#****Break*****
+#****Users*****
+#**************
+users:
+    robotronx:
+        group:
+        - Citizen

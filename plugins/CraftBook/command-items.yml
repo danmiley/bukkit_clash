@@ -1,0 +1,14 @@
+command-items:
+    LightningRod:
+        item: 369|Lightning Rod
+        commands:
+        - strike
+        permission-node: lightningrod.use
+        run-as: PLAYER
+        click-type: CLICK_RIGHT
+        delay: 0
+        delayed-commands: []
+        cooldown: 10
+        cancel-action: true
+        consumed-items:
+        - '331'

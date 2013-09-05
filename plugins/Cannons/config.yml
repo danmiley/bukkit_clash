@@ -1,0 +1,47 @@
+general:
+  #sets debug mode on or off. Turn off if you do not want to see as much info on in the server console or log files
+  debugMode: false
+cannonLimits:
+  #limits regarding how many cannons a player can build. set to false if you dont need to use it
+  useLimits: false
+  buildLimitA: 1
+  buildLimitB: 100
+tools:
+  #the item a player needs to be holding to adjust the aim of a cannon. Default is none.
+  ajust: '0:0'
+  #the item used to autoaim a cannon. Default is clock
+  autoaim: '347:0'
+  #the item used to fire a cannon. Default is flint and steel. Not every cannon needs a FiringItem.
+  firing: '259:0'
+  #item used to rotate a cannon 90 degrees. Not implemented yet
+  rotatingItem: '350:0'
+#enter here the blocks which require the superbreaker ability to destroy.
+#e.g. if you enter here the enchantment table it requires a projectile with superbreaker to be destroyed.
+#else it can be destroyed by normal explosions
+superbreakerBlocks:
+  #water
+  - 8
+  - 9
+  #lava
+  - 10
+  - 11
+  #obsidian
+  - 49
+  #enchantmenttable
+  - 116
+  #enderchest
+  - 130
+  #anvil
+  - 145
+#blocks which can't be destroyed by penetration of the projectile.
+#normal minecraft explosions are not affected by this option.
+unbreakableBlocks:
+  # bedrock
+  - 7
+database:
+  #database implementation. Default is SQLite, can be changed to MySql if you change the driver.  
+  username: bukkit
+  password: walrus
+  isolation: SERIALIZABLE
+  driver: org.sqlite.JDBC
+  url: jdbc:sqlite:{DIR}{NAME}.db

@@ -1,0 +1,36 @@
+== Colour Codes ==
+
+For people who don't know § = &
+
+§4 Red
+§c Rose
+§6 Gold
+§e Yellow
+§2 Green
+§a Lightgreen
+§b Lightblue
+§3 Cyan
+§1 Navy
+§9 Blue
+§d Lightpurple
+§5 Purple
+§f White
+§7 Lightgray
+§8 Gray
+§0 Black
+
+
+How to use Cannons
+This plugin was created to make cannons which can really be fired. Build the barrel with 3 wool blocks (can be changed in the config) and attach a button on both ends. Put a torch on the first block of the barrel and the system will recognize the cannon. The cannon must be loaded with sulfur and a cannonball (e.g. cobblestone) by right clicking on the barrel with the item selected in your hand. The more gunpowder you load in the barrel the farther the cannon ball will fly and the more penetration it will have.
+To increase the vertical firing angle, right click the upper or lower side of the barrel with empty hands. By right clicking on the side of the barrel the horizontal firing angle can be increased. Shift+right click will decrease the angle. You can also aim by using the aiming mode. Click with the clock on the barrel and look in the direction you want to fire. If you have loaded and adjusted the gun right click the torch to fire. 
+The cannon can also be fired with a redstone torch underneath the barrel. For the 'autofire' mode you need to place a chest next to the block with the torch above (how it should look like). Load gunpowder and the projectile into it and the cannon will reload automatically. You have to wear a helmet to protect yourself else the noise of the gun blast will confuse you.
+
+tempban
+Instructions:  This command allows you to ban a player for a specified amount of time.
+<time> Should given in "years(y) months(mo) weeks(w) days(d) hours(h) minutes(m) seconds(s}".
+You may omit blank parameters. For example: "2d 5h 30m".
+Permissions: 
+essentials.tempban	Allow access to the /tempban command.
+essentials.tempban.exempt     Prevents a specified group or player from being tempbanned
+essentials.tempban.offline    Allows temp-banning of players who are offline. This may allow you to ban exempt players.
+essentials.tempban.unlimited  Allows bypassing config file max ban time limit.

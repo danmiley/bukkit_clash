@@ -1,0 +1,672 @@
+### FactionsPlus v0.6.5 configuration file
+### 
+### 
+### All comments starting with `### ` (3 # and a space)(aka auto comments) will be automatically updated, 
+###  please refrain from making any changes inside those lines because they will be lost upon save
+### Comments with just one `#` will remain, though they will be moved before/after the auto comments
+### 
+### You may not use `.` aka dot in config options names even though we are referring to them like that
+###   ie. jails.enabled becomes `jails:<hit enter and 2 spaces>enabled`
+###  Each level is indented by exactly 2 spaces
+### 
+### You may use `/f debug configdiff` to see the config options that you've changed from their default (OPs/console only)
+### 
+### 
+### 
+### 
+jails:
+  ### 
+  ### # jails.enabled
+  ### default value: true
+  enabled: true
+  ### 
+  ### # jails.leadersCanSetJails
+  ### default value: true
+  leadersCanSetJails: true
+  ### 
+  ### # jails.officersCanSetJails
+  ### default value: true
+  officersCanSetJails: true
+  ### 
+  ### # jails.membersCanSetJails
+  ### default value: false
+  membersCanSetJails: false
+  ### 
+  ### # jails.leadersCanJail
+  ### default value: true
+  leadersCanJail: true
+  ### 
+  ### # jails.officersCanJail
+  ### default value: true
+  officersCanJail: true
+  ### 
+  ### # jails.removeOwnJailDataWhenLeavingFaction
+  ### default value: true
+  removeOwnJailDataWhenLeavingFaction: true
+  ### 
+  ### # jails.denyMovementWhileJailed
+  ### default value: true
+  denyMovementWhileJailed: true
+  ### 
+  ### # jails.delayBeforeSentToJail
+  ### default value: 0
+  ### the delay (in seconds) before a player is sent to jail
+  ### This is to help stop players jailing their own players while in combat.
+  delayBeforeSentToJail: 0
+  ### 
+  ### # jails.furtherRestrictJailUnjailToThoseThatHavePermission
+  ### default value: false
+  ### if true, it'll require leaders/officers to also have factionsplus.jailunjail permission node
+  ### before they will be allowed to jail/unjail
+  furtherRestrictJailUnjailToThoseThatHavePermission: false
+  ### 
+  ### # jails.canJailOnlyIfIssuerIsInOwnTerritory
+  ### default value: true
+  ### if true, it'll require the player that issues /f jail to be located inside his own faction territory
+  ###  before they will be allowed to jail (unjailing will work regardless)
+  ### if false, /f jail can be used from any location
+  ### setting this to true will prevent two+ players for abusing /f jail
+  ###  by issuing it on each other when they are in danger
+  canJailOnlyIfIssuerIsInOwnTerritory: true
+  ### 
+  ### # jails.tellPlayerWhoBannedThem
+  ### default value: true
+  tellPlayerWhoBannedThem: true
+warps:
+  ### 
+  ### # warps.enabled
+  ### default value: true
+  enabled: true
+  ### 
+  ### # warps.leadersCanSetWarps
+  ### default value: true
+  leadersCanSetWarps: true
+  ### 
+  ### # warps.officersCanSetWarps
+  ### default value: true
+  officersCanSetWarps: true
+  ### 
+  ### # warps.membersCanSetWarps
+  ### default value: false
+  membersCanSetWarps: false
+  ### 
+  ### # warps.mustBeInOwnTerritoryToCreate
+  ### default value: true
+  ### changing this from true to false does NOT remove all warps that are outside territories
+  ### when false, allows you to create and teleport to warps in any places even if they are in enemy land
+  mustBeInOwnTerritoryToCreate: true
+  ### 
+  ### # warps.denyWarpToEnemyLand
+  ### default value: true
+  ### only has effect when `mustBeInOwnTerritoryToCreate` is false,
+  ### if true, you cannot teleport to a warp residing inside enemy land
+  denyWarpToEnemyLand: true
+  ### 
+  ### # warps.denyWarpToAllyLand
+  ### default value: false
+  ### only has effect when `mustBeInOwnTerritoryToCreate` is false,
+  ### if true, you cannot teleport to a warp residing inside ally land
+  denyWarpToAllyLand: false
+  ### 
+  ### # warps.denyWarpToNeutralOrTruceLand
+  ### default value: false
+  ### only has effect when `mustBeInOwnTerritoryToCreate` is false,
+  ### if true, you cannot teleport to a warp residing inside neutral(and truce in 1.7) land
+  denyWarpToNeutralOrTruceLand: false
+  ### 
+  ### # warps.maxWarps
+  ### default value: 5
+  maxWarps: 5
+  ### 
+  ### # warps.warpTeleportAllowedFromEnemyTerritory
+  ### default value: true
+  warpTeleportAllowedFromEnemyTerritory: true
+  ### 
+  ### # warps.warpTeleportAllowedFromDifferentWorld
+  ### default value: true
+  warpTeleportAllowedFromDifferentWorld: true
+  ### 
+  ### # warps.warpTeleportAllowedEnemyDistance
+  ### default value: 35
+  warpTeleportAllowedEnemyDistance: 35
+  ### 
+  ### # warps.warpTeleportIgnoreEnemiesIfInOwnTerritory
+  ### default value: true
+  warpTeleportIgnoreEnemiesIfInOwnTerritory: true
+  ### 
+  ### # warps.smokeEffectOnWarp
+  ### default value: true
+  smokeEffectOnWarp: true
+  ### 
+  ### # warps.removeWarpIfDeniedAccess
+  ### default value: true
+  removeWarpIfDeniedAccess: true
+factions:
+  ### 
+  ### # factions.factionNameFirstLetterForceUpperCase
+  ### default value: false
+  ### Forces the first letter to uppercase on Faction names
+  factionNameFirstLetterForceUpperCase: false
+banning:
+  ### 
+  ### # banning.enabled
+  ### default value: true
+  enabled: true
+  ### 
+  ### # banning.leadersCanFactionBanAndUnban
+  ### default value: true
+  leadersCanFactionBanAndUnban: true
+  ### 
+  ### # banning.officersCanFactionBanAndUnban
+  ### default value: true
+  officersCanFactionBanAndUnban: true
+  ### 
+  ### # banning.furtherRestrictBanUnBanToThoseThatHavePermission
+  ### default value: false
+  ### If set to true this will automatically restrict the use of ban/unban commands
+  ### to those leaders/officers that have `factionsplus.banunban` permission node
+  ### For example if leaders/officers can ban/unban (from the above options)
+  ### then they'll only be allowed to do so only if they have this permission node
+  ### but if this option is false then they'll be allowed (only if their option above is set to true)
+  ### No other players are allowed to use ban/unban (not even console/OPs)
+  furtherRestrictBanUnBanToThoseThatHavePermission: false
+  ### 
+  ### # banning.canBanToPreventFutureJoins
+  ### default value: true
+  ### If true it allows banning of any players(that exist on the server) regardless if they are already in your faction
+  ### This is so that you can prevent a certain player from joining your faction even though your faction is open and
+  ### doesn't require invitation
+  ### If this is false then: You can only ban players that exist in your faction
+  canBanToPreventFutureJoins: true
+rules:
+  ### 
+  ### # rules.enabled
+  ### default value: true
+  enabled: true
+  ### 
+  ### # rules.leadersCanSetRules
+  ### default value: true
+  leadersCanSetRules: true
+  ### 
+  ### # rules.officersCanSetRules
+  ### default value: true
+  officersCanSetRules: true
+  ### 
+  ### # rules.maxRulesPerFaction
+  ### default value: 12
+  maxRulesPerFaction: 12
+  ### 
+  ### # rules.onFirstJoinFactionShowRules
+  ### default value: false
+  onFirstJoinFactionShowRules: false
+peaceful:
+  ### 
+  ### # peaceful.leadersCanToggleState
+  ### default value: false
+  ### if all these 3 options below are `false` then `/f togglestate` command won't be available
+  ###  you won't see it in `/f help`
+  ### if any of these 3 is `true` then `/f toggle` should be in `/f help`
+  ### but to make the command appear or disappear from help after changing these
+  ###  you have to restart the server
+  leadersCanToggleState: false
+  ### 
+  ### # peaceful.officersCanToggleState
+  ### default value: false
+  officersCanToggleState: false
+  ### 
+  ### # peaceful.membersCanToggleState
+  ### default value: false
+  membersCanToggleState: false
+  ### 
+  ### # peaceful.enablePeacefulBoosts
+  ### default value: true
+  enablePeacefulBoosts: true
+  ### 
+  ### # peaceful.powerBoostIfPeaceful
+  ### default value: 20
+  powerBoostIfPeaceful: 20
+powerboosts:
+  ### 
+  ### # powerboosts.enabled
+  ### default value: true
+  enabled: true
+  ### 
+  ### # powerboosts.extraPowerWhenKillPlayer
+  ### default value: 0.0
+  extraPowerWhenKillPlayer: 0.0
+  ### 
+  ### # powerboosts.extraPowerWhenKillMonster
+  ### default value: 0.0
+  extraPowerWhenKillMonster: 0.0
+  ### 
+  ### # powerboosts.extraPowerLossIfDeathBySuicide
+  ### default value: 0.0
+  extraPowerLossIfDeathBySuicide: 0.0
+  ### 
+  ### # powerboosts.extraPowerLossIfDeathByPVP
+  ### default value: 0.0
+  extraPowerLossIfDeathByPVP: 0.0
+  ### 
+  ### # powerboosts.extraPowerLossIfDeathByMob
+  ### default value: 0.0
+  extraPowerLossIfDeathByMob: 0.0
+  ### 
+  ### # powerboosts.extraPowerLossIfDeathByCactus
+  ### default value: 0.0
+  extraPowerLossIfDeathByCactus: 0.0
+  ### 
+  ### # powerboosts.extraPowerLossIfDeathByTNT
+  ### default value: 0.0
+  extraPowerLossIfDeathByTNT: 0.0
+  ### 
+  ### # powerboosts.extraPowerLossIfDeathByFire
+  ### default value: 0.0
+  extraPowerLossIfDeathByFire: 0.0
+  ### 
+  ### # powerboosts.extraPowerLossIfDeathByPotion
+  ### default value: 0.0
+  extraPowerLossIfDeathByPotion: 0.0
+  ### 
+  ### # powerboosts.extraPowerLossIfDeathByOther
+  ### default value: 0.0
+  extraPowerLossIfDeathByOther: 0.0
+announce:
+  ### 
+  ### # announce.enabled
+  ### default value: true
+  enabled: true
+  ### 
+  ### # announce.leadersCanAnnounce
+  ### default value: true
+  leadersCanAnnounce: true
+  ### 
+  ### # announce.officersCanAnnounce
+  ### default value: true
+  officersCanAnnounce: true
+  ### 
+  ### # announce.showLastAnnounceOnLogin
+  ### default value: true
+  showLastAnnounceOnLogin: true
+  ### 
+  ### # announce.showLastAnnounceOnLandEnter
+  ### default value: true
+  showLastAnnounceOnLandEnter: true
+economy:
+  ### 
+  ### # economy.enabled
+  ### default value: false
+  enabled: false
+  ### 
+  ### # economy.costToWarp
+  ### default value: 0.0
+  costToWarp: 0.0
+  ### 
+  ### # economy.costToCreateWarp
+  ### default value: 0.0
+  costToCreateWarp: 0.0
+  ### 
+  ### # economy.costToDeleteWarp
+  ### default value: 0.0
+  costToDeleteWarp: 0.0
+  ### 
+  ### # economy.costToAnnounce
+  ### default value: 0.0
+  costToAnnounce: 0.0
+  ### 
+  ### # economy.costToJail
+  ### default value: 0.0
+  costToJail: 0.0
+  ### 
+  ### # economy.costToSetJail
+  ### default value: 0.0
+  costToSetJail: 0.0
+  ### 
+  ### # economy.costToUnJail
+  ### default value: 0.0
+  costToUnJail: 0.0
+  ### 
+  ### # economy.costToToggleUpPeaceful
+  ### default value: 0.0
+  costToToggleUpPeaceful: 0.0
+  ### 
+  ### # economy.costToToggleDownPeaceful
+  ### default value: 0.0
+  costToToggleDownPeaceful: 0.0
+Teleports:
+  intoTerritory:
+    Ally:
+      deny:
+        ### 
+        ### # Teleports.intoTerritory.Ally.deny.ViaHomeCommand
+        ### default value: false
+        ViaHomeCommand: false
+        ### 
+        ### # Teleports.intoTerritory.Ally.deny.ViaBackCommand
+        ### default value: false
+        ViaBackCommand: false
+        ### 
+        ### # Teleports.intoTerritory.Ally.deny.ViaEnderPeals
+        ### default value: false
+        ViaEnderPeals: false
+      reportOnConsole:
+        ### 
+        ### # Teleports.intoTerritory.Ally.reportOnConsole.ifTeleportCauseIs_Command
+        ### default value: false
+        ifTeleportCauseIs_Command: false
+        ### 
+        ### # Teleports.intoTerritory.Ally.reportOnConsole.ViaEnderPeals
+        ### default value: false
+        ViaEnderPeals: false
+    Enemy:
+      deny:
+        ### 
+        ### # Teleports.intoTerritory.Enemy.deny.viaHomeCommand
+        ### default value: true
+        ### If, by using /home, the player would be teleported inside enemy territory then
+        ### having this option set to `true` will prevent the teleport from ever happening
+        viaHomeCommand: true
+        ### 
+        ### # Teleports.intoTerritory.Enemy.deny.viaBackCommand
+        ### default value: true
+        ### If true, it will deny the teleporting into enemy territory
+        ### when the /back command would teleport you there
+        viaBackCommand: true
+        ### 
+        ### # Teleports.intoTerritory.Enemy.deny.viaEnderPeals
+        ### default value: true
+        ### If set to `true` this will prevent players from landing inside enemy territory by using ender pearls
+        ### the pearl is spent if failed and a message will show
+        viaEnderPeals: true
+      reportOnConsole:
+        ### 
+        ### # Teleports.intoTerritory.Enemy.reportOnConsole.ifTeleportCauseIs_Command
+        ### default value: true
+        ### When true this will report(on server Console) the player that landed(via teleport caused by a command)
+        ###  inside enemy territory. The command that caused the teleport cannot be known, but the last command typed
+        ###  by the teleported player is shown as a helper. For example: another player can use /tphere to teleport that player
+        ###  and that player's last command will be reported(ie. /who) which is not the command that caused the teleport.
+        ### Enemy is the relation between that player that teleported and the faction that owns the territory where player would've landed, and it is evaluated at the time of the teleport
+        ### This will not be triggered for /home or /back if you have set(to true) the option(s) to deny teleports into enemy territory (0.4.8+)
+        ifTeleportCauseIs_Command: true
+        ### 
+        ### # Teleports.intoTerritory.Enemy.reportOnConsole.ViaEnderPeals
+        ### default value: true
+        ### Reports on server Console when a teleport via ender pearls caused the player to land inside enemy territory
+        ### This should be accurate.
+        ViaEnderPeals: true
+    Neutral:
+      deny:
+        ### 
+        ### # Teleports.intoTerritory.Neutral.deny.viaHomeCommand
+        ### default value: false
+        viaHomeCommand: false
+        ### 
+        ### # Teleports.intoTerritory.Neutral.deny.viaBackCommand
+        ### default value: false
+        viaBackCommand: false
+        ### 
+        ### # Teleports.intoTerritory.Neutral.deny.viaEnderPeals
+        ### default value: false
+        viaEnderPeals: false
+      reportOnConsole:
+        ### 
+        ### # Teleports.intoTerritory.Neutral.reportOnConsole.ifTeleportCauseIs_Command
+        ### default value: false
+        ifTeleportCauseIs_Command: false
+        ### 
+        ### # Teleports.intoTerritory.Neutral.reportOnConsole.ViaEnderPeals
+        ### default value: false
+        ViaEnderPeals: false
+    SafeZone:
+      ### 
+      ### # Teleports.intoTerritory.SafeZone.denyIfViaEnderPeals
+      ### default value: false
+      denyIfViaEnderPeals: false
+    WarZone:
+      ### 
+      ### # Teleports.intoTerritory.WarZone.denyIfViaEnderPeals
+      ### default value: false
+      denyIfViaEnderPeals: false
+extras:
+  ### 
+  ### # extras.disableUpdateCheck
+  ### default value: false
+  disableUpdateCheck: false
+  Scoreboards:
+    ### 
+    ### # extras.Scoreboards.showScoreboardOfMap
+    ### default value: false
+    showScoreboardOfMap: false
+    ### 
+    ### # extras.Scoreboards.showScoreboardOfFactions
+    ### default value: true
+    showScoreboardOfFactions: true
+    ### 
+    ### # extras.Scoreboards.sendScoreboardOnJoin
+    ### default value: true
+    sendScoreboardOnJoin: true
+    ### 
+    ### # extras.Scoreboards.secondsBetweenScoreboardUpdates
+    ### default value: 5
+    secondsBetweenScoreboardUpdates: 5
+  Protection:
+    LWC:
+      ### 
+      ### # extras.Protection.LWC.removeAllLocksOnClaim
+      ### default value: false
+      ### It is highly encouraged to have this enabled IF you have Factions' "onCaptureResetLwcLocks": true,
+      ### and you should then set onCaptureResetLwcLocks to false because all that one does is reset chests' locks,
+      ### which is already done by this option below & more.
+      ### The following are unlocked: chests, furnaces, signs, dispensers, wooden doors, iron doors, trap doors.
+      ### The locks are removed only if they are owned by someone that is not in your faction.
+      ### The removal happens when you claim land ie. /f claim
+      ### If onCaptureResetLwcLocks is true (in Factions plugin) then this option will be autoset to true in memory
+      removeAllLocksOnClaim: false
+      ### 
+      ### # extras.Protection.LWC.blockCPublicAccessOnNonOwnFactionTerritory
+      ### default value: false
+      ### will allow you to make a door truly public via /cpublic
+      blockCPublicAccessOnNonOwnFactionTerritory: false
+    PVP:
+      ### 
+      ### # extras.Protection.PVP.denyClaimWhenEnemyNearBy
+      ### default value: true
+      ### will not allow anyone to /f claim  if enemy players are in that chunk
+      denyClaimWhenEnemyNearBy: true
+      ### 
+      ### # extras.Protection.PVP.denyClaimWhenAllyNearBy
+      ### default value: false
+      ### will not allow anyone to /f claim  if ally players are in that chunk
+      denyClaimWhenAllyNearBy: false
+      ### 
+      ### # extras.Protection.PVP.denyClaimWhenNeutralNearBy
+      ### default value: false
+      ### will not allow anyone to /f claim  if neutral/TRUCE players are in that chunk
+      denyClaimWhenNeutralNearBy: false
+    ### 
+    ### # extras.Protection.removeSignProtectionOnClaim
+    ### default value: false
+    ### Remove Lockette's sign protection
+    removeSignProtectionOnClaim: false
+    ### 
+    ### # extras.Protection.allowFactionKillAlliesMobs
+    ### default value: true
+    ### Allow factions to kill ally faction mobs
+    allowFactionKillAlliesMobs: true
+    ### 
+    ### # extras.Protection.allowFactionKillNeutralMobs
+    ### default value: false
+    ### Allow factions to kill netural factions mobs
+    allowFactionKillNeutralMobs: false
+    ### 
+    ### # extras.Protection.allowFactionKillEnemyMobs
+    ### default value: false
+    ### Allow factions to kill enemy factions mobs
+    allowFactionKillEnemyMobs: false
+    ### 
+    ### # extras.Protection.protectSafeAnimalsInSafeZone
+    ### default value: false
+    ### Protects some safe mobs in SafeZone
+    protectSafeAnimalsInSafeZone: false
+    ### 
+    ### # extras.Protection.stricterFarmingProtection
+    ### default value: true
+    ### Enabling this will disallow shearing, milking, and fishing
+    ### outside your Faction land. But allows it in wilderness/factionless land.
+    stricterFarmingProtection: true
+    ### 
+    ### # extras.Protection.allowShopsInWilderness
+    ### default value: true
+    ### Change to false to disallow creating shops in the wilderness
+    allowShopsInWilderness: true
+    ### 
+    ### # extras.Protection.allowShopsInTerritory
+    ### default value: true
+    ### Change to false to disallow creating shops in their own territory
+    allowShopsInTerritory: true
+    ### 
+    ### # extras.Protection.allowSignProtectionInWilderness
+    ### default value: true
+    ### unused
+    allowSignProtectionInWilderness: true
+    ### 
+    ### # extras.Protection.allowSignProtectionInTerritory
+    ### default value: true
+    ### unused
+    allowSignProtectionInTerritory: true
+    ### 
+    ### # extras.Protection.onlyPeacefulCreateLWCProtections
+    ### default value: false
+    ### Enabling this will only allow peaceful Faction members to create LWC protections
+    onlyPeacefulCreateLWCProtections: false
+    ### 
+    ### # extras.Protection.safeZonesExtraSafe
+    ### default value: false
+    ### Enabling this will deny any damage to a player in a SafeZone.
+    safeZonesExtraSafe: false
+    ### 
+    ### # extras.Protection.worldguardCanBuildCheck
+    ### default value: true
+    ### If enabled, when claiming this will check world guard regions for can build
+    ### they will otherwise be denied.
+    worldguardCanBuildCheck: true
+  disguise:
+    ### 
+    ### # extras.disguise.enableDisguiseIntegration
+    ### default value: false
+    enableDisguiseIntegration: false
+    ### 
+    ### # extras.disguise.unDisguiseIfInOwnTerritory
+    ### default value: false
+    unDisguiseIfInOwnTerritory: false
+    ### 
+    ### # extras.disguise.unDisguiseIfInEnemyTerritory
+    ### default value: false
+    unDisguiseIfInEnemyTerritory: false
+  MultiVerse:
+    ### 
+    ### # extras.MultiVerse.enemyCantUseEnemyPortals
+    ### default value: true
+    ### disallow enemies from using each others portals
+    enemyCantUseEnemyPortals: true
+    ### 
+    ### # extras.MultiVerse.mustBeInOwnTerritoryToUsePortals
+    ### default value: false
+    ### will disallow people in other Factions from using others portals
+    mustBeInOwnTerritoryToUsePortals: false
+    ### 
+    ### # extras.MultiVerse.cannotBeInEnemyTerritoryToUsePortals
+    ### default value: false
+    ### this allows allies to use each others portals
+    cannotBeInEnemyTerritoryToUsePortals: false
+  Cannons:
+    ### 
+    ### # extras.Cannons.allowCannonUseInWilderness
+    ### default value: true
+    allowCannonUseInWilderness: true
+    ### 
+    ### # extras.Cannons.allowCannonUseInOwnTerritory
+    ### default value: true
+    allowCannonUseInOwnTerritory: true
+    ### 
+    ### # extras.Cannons.allowCannonUseInEnemyTerritory
+    ### default value: false
+    allowCannonUseInEnemyTerritory: false
+  ### 
+  ### # extras.crossBorderLiquidFlowBlock
+  ### default value: false
+  ### Warning: High Intensity/Resource Hog Check, prevents stuff like cobblestone grief using lava/water
+  crossBorderLiquidFlowBlock: false
+template:
+  ### 
+  ### # template.announcement_message
+  ### default value: <red>!1 <white>announced: !2
+  ### This is what is displayed for announcements
+  announcement_message: <red>!1 <white>announced: !2
+  ### 
+  ### # template.warp_created
+  ### default value: <green>Warp <white>!1 <green>set for your Faction!
+  ### This is ONLY send to the player setting the warp.
+  warp_created: <green>Warp <white>!1 <green>set for your Faction!
+  ### 
+  ### # template.notify_warp_created
+  ### default value: !1 created a warp in your faction called !2
+  ### This is announced to the Faction when a warp is set
+  notify_warp_created: !1 created a warp in your faction called !2
+  ### 
+  ### # template.warp_non_existant
+  ### default value: That warp does not exist.
+  ### Sent when a warp does not exist.
+  warp_non_existant: That warp does not exist.
+  ### 
+  ### # template.warped_to
+  ### default value: <green>Warped to <white>!1
+  ### Sent when a player is warped.
+  warped_to: <green>Warped to <white>!1
+  ### 
+  ### # template.warped_removed
+  ### default value: <green>The warp <white>!1<green> was removed.
+  ### Sent when a warp is removed.
+  warped_removed: <green>The warp <white>!1<green> was removed.
+  ### 
+  ### # template.warp_incorrect_password
+  ### default value: <red>Incorrect password, please use /f warp [warp] <password>
+  ### Sent when a warp has an incorrect password.
+  warp_incorrect_password: <red>Incorrect password, please use /f warp [warp] <password>
+  ### 
+  ### # template.create_warp_denied_badrank
+  ### default value: <red>Sorry, your ranking is not high enough to create warps!
+  ### When a players ranking is not high enough, this is sent through.
+  create_warp_denied_badrank: <red>Sorry, your ranking is not high enough to create warps!
+  ### 
+  ### # template.create_warp_denied_badterritory
+  ### default value: <red>You must be in your own territory to create a warp!
+  ### Message sent if the player is not in their own territory.
+  create_warp_denied_badterritory: <red>You must be in your own territory to create a warp!
+  ### 
+  ### # template.warps_reached_max
+  ### default value: <red>You have reached the max amount of warps.
+  ### Message sent when reached max warps for the players Faction.
+  warps_reached_max: <red>You have reached the max amount of warps.
+  ### 
+  ### # template.warps_already_exists
+  ### default value: <red>A warp already exists with that name.
+  ### Messaged sent to player when a warp already exists.
+  warps_already_exists: <red>A warp already exists with that name.
+  ### 
+  ### # template.jailed_message
+  ### default value: <red>You have been Jailed! If you are unhappy with this faction, you can leave the Faction.
+  ### Sent to a player when they have been jailed.
+  jailed_message: <red>You have been Jailed! If you are unhappy with this faction, you can leave the Faction.
+  ### 
+  ### # template.faction_need
+  ### default value: <white>The player !1 is looking for a Faction! You can invite them with <green>/f inv !1
+  ### Sent to Faction leaders and officers when /f need is called.
+  faction_need: <white>The player !1 is looking for a Faction! You can invite them with <green>/f inv !1
+### 
+### # disableAutoCommentsInConfig
+### default value: false
+### if true it will remove all auto comments which explain what each option does in the config file.
+### The config file header is not removed.
+### This option is here only for those that want to increase readability in the config file.
+disableAutoCommentsInConfig: false

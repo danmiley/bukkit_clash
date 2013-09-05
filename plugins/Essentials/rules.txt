@@ -1,0 +1,27 @@
+Most Important!
+[1] Be respectful
+[2] Be ethical
+[3] Use common sense
+
+Please take a look at our rules
+- Don't swear.
+- Don't use your CapsLock.
+- Don't ask for a higher rank.
+- Respect the staff and the other players.
+- Don't troll or prank anybody on the server.
+- No PVPLog.
+- You can't ask your stuff back by an admin.
+- Don't ask for any stuff by an admin.
+- Don't use Hacks or Mods (except for Optifine and REI's Minimap).
+- Have fun!
+
+
+New Stuff:
+/camoarmor [player] - Gives player Color Change Armor
+/camoarmor [player] party - Gives players Party Armor
+/camoarmor [player] stealth - Gives player Experimental Stealth Armor 
+
+&6To see a map of the world in a web browser, go to http://54.215.151.253:8123/
+&6New commands: "/enchant all" and "/disguise wolf"
+&6 Big News: The 'Cannons' mod is on now, put 3 wool blocks together, then add a button block on each end...
+&6 then add a torch to the top of one end of the cannon, then right click the torch to fire the cannon. wow! reload with gunpowder and cobblestone

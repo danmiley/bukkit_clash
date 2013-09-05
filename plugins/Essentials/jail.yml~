@@ -1,0 +1,15 @@
+jails: 
+  jail1: 
+    world: revengeofthelords
+    x: -294.89345374430104
+    y: 72.0
+    z: 383.3522901946717
+    yaw: 72.0004
+    pitch: 12.299968
+  jail: 
+    world: revengeofthelords
+    x: -297.69999998807907
+    y: 65.0
+    z: 417.69999998807907
+    yaw: 339.15012
+    pitch: 77.400024

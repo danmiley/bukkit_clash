@@ -1,0 +1,21 @@
+# `0 = Black  |  `1 = DarkGray
+# `2 = GRAY   |  `w = White
+# `r = Red    |  `R = DarkRed
+# `y = YELLOW |  `Y = Gold
+# `g = Green  |  `G = DarkGreen
+# `c = Cyan   |  `C = DarkCyan
+# `b = Blue   |  `B = DarkBlue
+# `p = Purple |  `P = DarkPurple
+# ------------------------------------------
+# interval(MINUTES) - Interval between saves
+# SilentMode - Operate in SilentMode (No Broadcasts/Console logs)
+# ServerBroadcast - Broadcast a message to the server whenever data is autosaved
+# BroadcastEachWorld - Broadcast a confirmation of each world as it is saved
+# AutoSaveMessage - Message to broadcast on AutoSave
+# ------------------------------------------
+interval: 30
+Broadcast:
+  SilentMode: false
+  ServerBroadcast: true
+  BroadcastEachWorld: true
+  AutoSaveMessage: '`2[Simple-AutoSave] `ySaving Worlds & Player Data...'

@@ -1,0 +1,64 @@
+spawns: 
+  default: 
+    world: revengeofthelords
+    x: -418.4974071078468
+    y: 66.0
+    z: 251.27232280439628
+    yaw: 1.5170898
+    pitch: -4.499977
+  moderator: 
+    world: revengeofthelords
+    x: -418.5
+    y: 66.0
+    z: 251.5
+    yaw: 1.5170898
+    pitch: -4.499977
+  admin: 
+    world: revengeofthelords
+    x: -418.5
+    y: 66.0
+    z: 251.5
+    yaw: 1.5170898
+    pitch: -4.499977
+  owner: 
+    world: revengeofthelords
+    x: -418.5
+    y: 66.0
+    z: 251.5
+    yaw: 1.5170898
+    pitch: -4.499977
+  superadmin: 
+    world: revengeofthelords
+    x: -418.5
+    y: 66.0
+    z: 251.5
+    yaw: 1.5170898
+    pitch: -4.499977
+  co: 
+    world: revengeofthelords
+    x: -418.5
+    y: 66.0
+    z: 251.5
+    yaw: 1.5170898
+    pitch: -4.499977
+  "co-owner": 
+    world: revengeofthelords
+    x: -418.5
+    y: 66.0
+    z: 251.5
+    yaw: 1.5170898
+    pitch: -4.499977
+  opperator: 
+    world: revengeofthelords
+    x: -418.54749358827087
+    y: 66.0
+    z: 251.30000001192093
+    yaw: 1.2170105
+    pitch: -0.5999752
+  megamod: 
+    world: revengeofthelords
+    x: -418.54749358827087
+    y: 66.0
+    z: 251.30000001192093
+    yaw: 1.2170105
+    pitch: -0.5999752

@@ -1,0 +1,66 @@
+Flame-bow:
+  crafting: true
+Punch-bow:
+  crafting: true
+Punch2-bow:
+  crafting: true
+Power-bow:
+  crafting: true
+Power2-bow:
+  crafting: true
+Power3-bow:
+  crafting: true
+Power4-bow:
+  crafting: true
+Power5-bow:
+  crafting: true
+Unbreaking-bow:
+  crafting: true
+Unbreaking2-bow:
+  crafting: true
+Unbreaking3-bow:
+  crafting: true
+Arrows:
+  crafting: true
+Helmet:
+  crafting: true
+Helmet2:
+  crafting: true
+Helmet3:
+  crafting: true
+Helmet4:
+  crafting: true
+LightningSoul:
+  crafting: true
+  using: true
+Lightning-bow:
+  crafting: true
+  using: true
+Explosion-bow:
+  crafting: true
+  using: true
+  radius: 0.5
+Poison-bow:
+  crafting: true
+  using: true
+Disappearance-bow:
+  crafting: true
+  using: true
+Freeze-bow:
+  crafting: true
+  using: true
+Ghast-bow:
+  crafting: true
+  using: true
+  onlynether: true
+Wither-bow:
+  crafting: true
+  using: true
+  effectDurability: 80
+Squid-bow:
+  crafting: true
+  using: true
+  effectDurability: 100
+Ender-bow:
+  crafting: true
+  using: true

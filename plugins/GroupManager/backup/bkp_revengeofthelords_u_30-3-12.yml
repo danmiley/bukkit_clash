@@ -1,0 +1,75 @@
+users:
+  blazeball137:
+    group: Moderator
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms
+  boomshockalaka:
+    group: Moderator
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms
+  EliLiu:
+    group: Moderator
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms
+  GemMiner49er:
+    group: Moderator
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms
+  joelrocks122:
+    group: Moderator
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms
+  k9trooper:
+    group: Moderator
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms
+  kaijay77:
+    group: Moderator
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms
+  LordDiego02:
+    group: Moderator
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms
+  mrpigman2:
+    group: Moderator
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms
+  obmassey10:
+    group: Admin
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms
+  OliverPaloVerde:
+    group: Moderator
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms
+  reckless40:
+    group: Moderator
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms
+  robotronx:
+    group: Admin
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms
+  romancaufield:
+    group: Moderator
+    subgroups: []
+    permissions: []
+  soccerrocket1:
+    group: Builder
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms

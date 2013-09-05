@@ -1,0 +1,18 @@
+{
+  "serverid": "a98b65b8-f563-4c9b-8aa7-4f2f43e0241b",
+  "alias2uri": {
+    "default": "flatfile",
+    "flatfile": "flatfile://mstore",
+    "mongodb": "mongodb://localhost:27017/mstore"
+  },
+  "dburi": "default",
+  "aliasesOuterMCore": [
+    "mcore"
+  ],
+  "aliasesOuterMCoreUsys": [
+    "usys"
+  ],
+  "aliasesOuterMCoreMStore": [
+    "mstore"
+  ]
+}

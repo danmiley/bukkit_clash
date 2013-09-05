@@ -1,0 +1,14 @@
+#AnimalLock Configuration File
+#-------------------------------
+#
+#updateCheck | Recommended to keep this true.
+updateCheck: true
+#
+#BukkitDev: http://dev.bukkit.org/bukkit-plugins/AnimalLock
+#-------------------------------
+#protected | Options for protected/locked animals.
+protected:
+  #disablePlayerInteract | Block a player from right clicking a locked entity. (Unless owner)
+  disablePlayerInteract: true
+  #disablePlayerDamage | Block a player from directly damaging a locked entity. (Unless owner)
+  disablePlayerDamage: true

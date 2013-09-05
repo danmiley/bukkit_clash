@@ -1,0 +1,98 @@
+{
+  "name": "WarZone",
+  "description": "Not the safest place to be",
+  "createdAtMillis": 1377408673760,
+  "open": false,
+  "flags": {
+    "PERMANENT": true,
+    "PEACEFUL": true,
+    "INFPOWER": true,
+    "POWERLOSS": true,
+    "PVP": true,
+    "FRIENDLYFIRE": true,
+    "MONSTERS": true,
+    "EXPLOSIONS": true,
+    "FIRESPREAD": true,
+    "ENDERGRIEF": true
+  },
+  "perms": {
+    "BUILD": [
+      "LEADER",
+      "OFFICER",
+      "MEMBER",
+      "ALLY"
+    ],
+    "PAINBUILD": [],
+    "DOOR": [
+      "ENEMY",
+      "NEUTRAL",
+      "RECRUIT",
+      "ALLY",
+      "OFFICER",
+      "MEMBER",
+      "TRUCE",
+      "LEADER"
+    ],
+    "BUTTON": [
+      "ENEMY",
+      "NEUTRAL",
+      "RECRUIT",
+      "ALLY",
+      "OFFICER",
+      "MEMBER",
+      "TRUCE",
+      "LEADER"
+    ],
+    "LEVER": [
+      "ENEMY",
+      "NEUTRAL",
+      "RECRUIT",
+      "ALLY",
+      "OFFICER",
+      "MEMBER",
+      "TRUCE",
+      "LEADER"
+    ],
+    "CONTAINER": [
+      "ENEMY",
+      "NEUTRAL",
+      "RECRUIT",
+      "ALLY",
+      "OFFICER",
+      "MEMBER",
+      "TRUCE",
+      "LEADER"
+    ],
+    "INVITE": [
+      "LEADER",
+      "OFFICER"
+    ],
+    "KICK": [
+      "LEADER",
+      "OFFICER"
+    ],
+    "SETHOME": [
+      "LEADER",
+      "OFFICER"
+    ],
+    "WITHDRAW": [
+      "LEADER",
+      "OFFICER"
+    ],
+    "TERRITORY": [
+      "OFFICER",
+      "MEMBER",
+      "LEADER"
+    ],
+    "ACCESS": [
+      "LEADER",
+      "OFFICER"
+    ],
+    "DISBAND": [
+      "LEADER"
+    ],
+    "PERMS": [
+      "LEADER"
+    ]
+  }
+}

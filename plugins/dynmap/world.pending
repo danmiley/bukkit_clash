@@ -1,0 +1,16 @@
+tiles:
+-   class: org.dynmap.hdmap.HDMapTile
+    data: -3,-13,iso_S_90_lowres,0
+-   class: org.dynmap.hdmap.HDMapTile
+    data: -9,-9,iso_S_90_lowres,0
+-   class: org.dynmap.hdmap.HDMapTile
+    data: -8,-13,iso_S_90_lowres,0
+-   class: org.dynmap.hdmap.HDMapTile
+    data: -4,-9,iso_S_90_lowres,0
+invalid:
+    t: [
+        ]
+    flat:
+    - ffffffff/ffffffff:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:21000000/0:0/0:0/0:0/0:10800000/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0
+    ct: [
+        ]

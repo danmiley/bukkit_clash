@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CommandBook 2.3</title>
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Ropa+Sans" rel="stylesheet" type="text/css">
+<style>
+body {
+    margin: 0;
+    padding: 3em 1em;
+    background: #efefef;
+    color: #333;
+    line-height: 1.5;
+}
+#wrapper {
+    width: 600px;
+    margin: auto;
+}
+body, th, td, input {
+    font: 14px 'Source Sans Pro', Arial, sans-serifsans-serif;
+}
+.section {
+	background: #fff;
+	position: relative;
+	padding: 2em 2.4em;
+	margin: 3em auto 4em auto;
+    width: 80%;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+.section:before, .section:after {
+	content: "";
+	position: absolute;
+	z-index: -2;
+}
+.section {
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.section:before, .section:after {
+	bottom: 15px;
+	left: 10px;
+	width: 50%;
+	height: 20%;
+	max-width: 300px;
+	max-height: 100px;
+    -webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    -ms-transform: rotate(-1deg);
+    -o-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+}
+.section:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
+    transform: rotate(1deg);
+}
+a:link, a:visited {
+    color: #0004b2;   
+    text-decoration: none;
+}
+a:hover {
+    color: #ac0000;
+    text-decoration: none;
+    border-bottom: 1px solid #999;
+}
+h1 {
+    font: 2.7em 'Ropa Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+    color: #000;
+    margin: 0 0;
+    padding: 0 0 0.2em 0;
+    font-weight: normal;
+    text-align: center;
+    text-shadow: 2px 2px #FFF;
+}
+h2 {
+    font-size: 1.3em;
+    color: #FFF;
+    margin: -2.5em 0 0.8em 0;
+    float: left;
+    background: #27B996;
+    padding: 0.4em 0.8em;
+    border-radius: 0.2em;
+    font-weight: normal;
+    text-align: center; 
+}
+h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+h2 + * {
+    clear: both;
+}
+@media (max-width: 650px) {
+    #wrapper {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div id="wrapper">
+    <h1>CommandBook 2.3</h1>
+    <div class="section">
+        <h2>Getting Started</h2>
+        <p>
+            Thanks for choosing CommandBook! When you first install CommandBook,
+            nothing will be enabled, so you will need to switch on the features
+            that you need to use, whenever it is convenient for you.
+        </p>
+        <ul>
+            <li><a href="http://wiki.sk89q.com/wiki/CommandBook/Installation">How do I install CommandBook?</a></li>
+            <li><a href="http://wiki.sk89q.com/wiki/CommandBook/Upgrading">How do I update CommandBook?</a></li>
+            <li><a href="http://wiki.sk89q.com/wiki/CommandBook#Usage">How do I use CommandBook?</a></li>
+        </ul>
+        <p>
+            Need help?
+            <a href="http://wiki.sk89q.com/wiki/CommandBook/Support">See the ways that you can get assistance</a>.
+        </p>
+    </div>
+    <div class="section">
+        <h2>Common Issues</h2>
+        
+        <h3>What's homeconvert.py?</h3>
+        <p>
+            It is a Python script (you need to install Python and run the script through
+            command prompt or command line) to convert homes from other plugins
+            (namely MyHomes and Warpz0r at the moment).
+        </p>
+        
+        <h3>CommandBook doesn't seem to work.</h3>
+        <p>
+            Two common mistakes include forgetting to install WorldEdit
+            (CommandBook needs it), or making
+            a syntax error in one of CommandBook's configuration files (this is very
+            fatal unfortunately, and can be caused by a single character typed in the wrong place). Try 
+            <a href="http://wiki.sk89q.com/wiki/CommandBook/Support">asking in IRC</a>
+            to see whether anyone can help you.
+        </p>
+        
+        <h3>Where do I report bugs or suggest ideas?</h3>
+        <p>
+            Make sure you are using the latest version of CommandBook, try asking in
+            IRC first (see "Need help?" above) if it's a problem, and if you think you've
+            found a bug or have a great suggestion to provide, please
+            report it to <a href="http://youtrack.sk89q.com/issues/CMDBOOK">our issue tracker</a>.
+        </p>
+        
+        <p>
+            Still need help?
+            <a href="http://wiki.sk89q.com/wiki/CommandBook/Support">See the ways that you can get assistance</a>.
+        </p>
+    </div>
+    <div class="section">
+        <h2>Contributing</h2>
+        <p>
+            Did you know that CommandBook is open source? That means that you can
+            read the code and learn from it, as well as modify it and submit back
+            changes to help the community!
+        </p>
+        <ul>
+            <li><a href="https://github.com/sk89q/commandbook">View the source code</a></li>
+            <li><a href="http://wiki.sk89q.com/wiki/CommandBook/Development">More information</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

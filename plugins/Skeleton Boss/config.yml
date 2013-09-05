@@ -1,0 +1,18 @@
+#SkeletonBoss config.yml
+#1 in [probability] chance that the boss will spawn
+#1 probability means the boss will spawn always
+probability: 400
+#health of boss
+health: 30
+#true: attacks strike lightning when boss is lower than half health
+lightning: true
+#Change this to any type of valid material
+#spaces should be underscores and letter should be capitalized
+#Example: gold ingot --> GOLD_INGOT
+drop: GOLD_INGOT
+#can be any normal mob
+#spaces should be underscores and letter should be capitalized
+mount: SLIME
+#name of world for it to spawn
+#type all to spawn it in any world
+world: all

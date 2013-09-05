@@ -1,0 +1,6 @@
+{
+  "baseCommandAliases": [
+    "f"
+  ],
+  "dburi": "default"
+}
