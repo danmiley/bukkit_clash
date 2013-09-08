@@ -15,7 +15,7 @@ npc:
         z: '249.61086748511667'
         yaw: '-87.28294372558594'
         pitch: '1.9500091075897217'
-    traitnames: spawned,type,location,owner
+    traitnames: type,location,spawned,owner
     navigator:
       pathfindingrange: '25.0'
       stationaryticks: -1
@@ -34,7 +34,7 @@ npc:
         z: '250.49461792599567'
         yaw: '-91.33293151855469'
         pitch: '2.0999484062194824'
-    traitnames: spawned,type,location,owner
+    traitnames: type,location,spawned,owner
     navigator:
       pathfindingrange: '25.0'
       stationaryticks: -1
@@ -53,7 +53,7 @@ npc:
         z: '262.7235409528664'
         yaw: '269.56707763671875'
         pitch: '7.650014400482178'
-    traitnames: spawned,type,location,owner
+    traitnames: type,location,spawned,owner
     navigator:
       pathfindingrange: '25.0'
       stationaryticks: -1
@@ -72,7 +72,7 @@ npc:
         z: '248.5062145677581'
         yaw: '270.7677001953125'
         pitch: '1.5000083446502686'
-    traitnames: spawned,type,location,owner
+    traitnames: type,location,spawned,owner
     navigator:
       pathfindingrange: '25.0'
       stationaryticks: -1
@@ -91,7 +91,7 @@ npc:
         yaw: '270.75244140625'
         pitch: '1.799972653388977'
       owner: mrpigman2
-    traitnames: spawned,type,location,owner
+    traitnames: type,location,spawned,owner
     navigator:
       pathfindingrange: '25.0'
       stationaryticks: -1
@@ -110,7 +110,7 @@ npc:
         yaw: '-17.849960327148438'
         pitch: '19.80003547668457'
       owner: robotronx
-    traitnames: spawned,type,location,owner
+    traitnames: type,location,spawned,owner
     navigator:
       pathfindingrange: '25.0'
       stationaryticks: -1
